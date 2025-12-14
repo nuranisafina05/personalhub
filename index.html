@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INDEX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-box{
+    background: #FFE6F0;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 600px;
+    margin: 40px auto;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.content-box h2{
+    margin-top: 0;
+    color: #51087E;
+}
+
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+section{
+    padding:10px;
+    width:100%;
+}
+
+.w3-bar {
+    margin-top: 10px;
+}
+
+#clock-container {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #f7f7f7;
+    border-top: 2px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    font-family: courier;
+    margin-top: auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 16px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.w3-col {
+    flex: 1 1 calc(25% - 16px);
+    box-sizing: border-box;
+}
+
+@media(max-width: 992px) {
+    .w3-col {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media(max-width: 600px) {
+    .w3-col {
+        flex: 1 1 100%;
+    }
+}
+</style>
+</head>
+
+<body onload="startTime()">
+
+<div id="clock-container">
+    <h2>Clock</h2>
+    <div id="txt"></div>
+</div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) { i = "0" + i }
+  return i;
+}
+</script>
+
+<header>
+<marquee scrolldelay="80"><h1>&#127872; WELCOME TO MY WEBSITE &#127872;</h1></marquee>
+</header>
+
+<div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">GALLERY</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large">EDUCATION</a>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-large">
+            MORE <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="favourite.html" class="w3-bar-item w3-button">FAVOURITE</a>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+<h2 class="w3-wide">ABOUT ME</h2>
+<p class="w3-justify">My name is Nur Anis Afina binti Ahmad. I am 20 years old.I was born on 29th September 2005 at Hospital Tengku Ampuan Rahimah, Klang. I have three siblings and I am the youngest one. I have two older brothers. The oldest one is 30 years old and single. The second one is 28 years old and married. My hobby is to watch variety of movies and listen to music. I also like to watch dramas from other countries such as Japanese, Korean, Thailand and Chinese. I have interest to learn new languages and cooking new recipes from YouTube and TikTok.</p>
+</div>
+
+    <div class="content-box">
+        <h2>My Resume and CV 📄</h2>
+        <p style="font-size:18px;color:#555;">
+            Click the button below to view or download my resume and CV.
+        </p>
+
+        <a href="https://drive.google.com/file/d/1cCZ1YiWuWZvsunXQyKgLwscTvI6CKRu9/view" target="_blank" style="display:inline-block;padding:12px
+        25px;background-color:#f3b3d3;color:white;font-size:18px;border-radius:10px;text-decoration:none;font-weight:bold;">View My Resume</a>
+
+        <a href="https://drive.google.com/file/d/1RPgl2-oeUqNYv_GI9Y2izKJ0CjTHjJdG/view" target="_blank" style="display:inline-block;padding:12px
+        25px;background-color:#f3b3d3;color:white;font-size:18px;border-radius:10px;text-decoration:none;font-weight:bold;">View My CV</a>
+    </div>
+</section>
+
+<b><h2 style="text-align:center; margin-top:50px;">Favourite GIFs</b></h2>
+
+<div class="w3-row-padding w3-margin-top">
+
+    <div class="w3-col gallery-item">
+        <img src="sakura haruka.gif" onclick="onClick(this)" alt="Windbreaker">
+        <div class="gallery-caption">Sakura Haruka</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="chu kong.webp" onclick="onClick(this)" alt="Love You Seven Times">
+        <div class="gallery-caption">Chu Kong</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="ron.gif" onclick="onClick(this)" alt="Ron Kamonohashi's Forbidden Deductions">
+        <div class="gallery-caption">Ron Kamonohashi</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="harry potter.gif" onclick="onClick(this)" alt="Harry Potter">
+        <div class="gallery-caption">Harry Potter</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="gorya.gif" onclick="onClick(this)" alt="F4 Thailand">
+        <div class="gallery-caption">Gorya</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="a-yin.webp" onclick="onClick(this)" alt="The Last Immortal">
+        <div class="gallery-caption">A-yin</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="hermione.gif" onclick="onClick(this)" alt="Harry Potter">
+        <div class="gallery-caption">Hermione Granger</div>
+    </div>
+
+    <div class="w3-col gallery-item">
+        <img src="mingyi.gif" onclick="onClick(this)" alt="Love In The Clouds">
+        <div class="gallery-caption">Mingyi</div>
+    </div>
+
+</div>
+
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:100px"> 
+<a href ="https://www.facebook.com/nuranis.afina.1"target="_blank"><img src="fb.png" width="40" height="40"></a>
+<a href ="https://www.instagram.com/nuranisafina05"target="_blank"><img src="ig.jpg" width="40" height="40"></a>
+<a href ="https://x.com/NurAnisAfina3"target="_blank"><img src="x.jpg" width="40" height="40"></a>
+<a href ="https://www.tiktok.com/@nuranisafina"target="_blank"><img src="tiktok.jpg" width="40" height="40"></a>
+<a href ="https://wa.me/60193951557"target="_blank"><img src="whatsapp.jpg" width="40" height="40"></a><br><br>
+Copyright &#128157; &copy; NUR ANIS AFINA AHMAD
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
