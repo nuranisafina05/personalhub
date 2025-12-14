@@ -1,0 +1,224 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOD & BEVERAGES</title>
+ 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+body {
+    margin: 0;      /* remove default margin */
+    padding: 0;     /* remove default padding */
+    font-family: courier;
+    background: url('f&b bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header same style as PLACES */
+.header-title {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Gallery style copied from PLACES */
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+.gallery-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    position: absolute;
+    font-size: 26px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Section headings */
+h2 {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Item titles */
+h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer (your original code untouched) */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    background: #f7f7f7;
+    border-top: 2px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    font-family: courier;
+}
+</style>
+</head>
+
+<body>
+
+<b><h1 class="header-title">Favourites Food & Beverages</b></h1>
+
+<div class="content-wrapper">
+
+<div class="container-fluid">
+
+    <div class="row text-center">
+
+        <h2>Favourite Food &#127843;</h2>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="macaroni.jpg" alt="Fried Macaroni">
+                <div class="overlay"><a href="macaroni.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Fried Macaroni</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="tomyam.jpg" alt="Tomyam">
+                <div class="overlay"><a href="tomyam.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Tomyam</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="ramen.png" alt="Ramen">
+                <div class="overlay"><a href="ramen.png" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Ramen</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="sushi.jpg" alt="Sushi">
+                <div class="overlay"><a href="sushi.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Sushi</h3>
+            </div>
+        </div>
+
+        <h2>Favourite Dessert &#127848;</h2>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="pancake.jpg" alt="Pancake">
+                <div class="overlay"><a href="pancake.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Pancake</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="creme brulee.jpg" alt="Crème Brûlée">
+                <div class="overlay"><a href="creme brulee.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Crème Brûlée</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="cake.jpg" alt="Hazelnut Chocolate Cake">
+                <div class="overlay"><a href="cake.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Hazelnut Chocolate Cake</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="ice cream.jpg" alt="Ice Cream">
+                <div class="overlay"><a href="ice cream.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Ice Cream</h3>
+            </div>
+        </div>
+
+        <h2>Favourite Beverages &#9749;</h2>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="water.jpg" alt="Iced Water">
+                <div class="overlay"><a href="water.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Iced Water</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="tea.jpg" alt="Iced Peach Tea">
+                <div class="overlay"><a href="tea.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Iced Peach Tea</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="tealive.jpg" alt="Bang Bang Fresh Milk">
+                <div class="overlay"><a href="tealive.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Bang Bang Fresh Milk</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="gallery-item">
+                <img src="coconut shake.jpg" alt="Coconut Shake">
+                <div class="overlay"><a href="coconut shake.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Coconut Shake</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+<footer>
+    Copyright &#128157; &copy; NUR ANIS AFINA AHMAD
+</footer>
+
+</body>
+</html>
+
+
+

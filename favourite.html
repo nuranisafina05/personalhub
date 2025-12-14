@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAVOURITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+  font-family: courier;
+  margin: 0;
+}
+
+header{
+  padding: 40px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+/* OPTIONAL: make text nicer but does not affect layout */
+.w3-display-middle a{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- HEADER -->
+<header><b>MY FAVOURITES</b></header>
+
+<!-- Navbar (asal, tidak diubah) -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" 
+     href="javascript:void(0);" onclick="openNav()">
+     <i class="fa fa-bars"></i></a>
+ </div>
+</div>
+
+<!-- SLIDESHOW -->
+<div class="mySlides w3-display-container w3-center">
+    <img src="makanan.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <a href="f&b.html" target="_blank">Food & Beverages</a>
+    </div>
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="hiburan.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <a href="entertainment.html" target="_blank">Entertainment</a>
+    </div>
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="pantai.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <a href="places.html" target="_blank">Places</a>
+    </div>
+</div>
+
+<script>
+// Automatic Slideshow (asal)
+var myIndex = 0;
+carousel();
+
+function carousel(){
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for(i = 0; i < x.length; i++){
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if(myIndex > x.length){myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+</script>
+
+</body>
+</html>
