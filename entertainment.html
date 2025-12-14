@@ -1,0 +1,363 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTERTAINMENT</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: courier;
+}
+
+body {
+    background: url('entertainment bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    width: 100%;
+}
+
+.header-title {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+.gallery-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    position: absolute;
+    font-size: 26px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #f7f7f7;
+    border-top: 2px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    font-family: courier;
+}
+</style>
+</head>
+
+<body>
+
+<b><h1 class="header-title">Types Of Entertainment</b></h1>
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+
+        <!-- Favourite Actor -->
+        <div class="heading-container">
+            <h2>Favourite Actor</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="choi minho.jpg" alt="Choi Minho">
+                    <div class="overlay"><a href="choi minho.jpg" class="fa fa-expand" target="_blank"></a></div>
+                    <h3>Choi Minho</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="yaya.jpg" alt="Urassaya Sperbund">
+                    <div class="overlay"><a href="yaya.jpg" class="fa fa-expand" target="_blank"></a></div>
+                    <h3>Urassaya Sperbund</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="tjc.jpg" alt="Tan Jian Ci">
+                    <div class="overlay"><a href="tjc.jpg" class="fa fa-expand" target="_blank"></a></div>
+                    <h3>Tan Jian Ci</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="ry.jpg" alt="Ryusei Yokohama">
+                    <div class="overlay"><a href="ry.jpg" class="fa fa-expand" target="_blank"></a></div>
+                    <h3>Ryusei Yokohama</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite Drama -->
+        <div class="heading-container">
+            <h2>Favourite Drama</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="esok.jpg" alt="Tomorrow">
+                <div class="overlay"><a href="esok.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Tomorrow (2022)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="f4.jpg" alt="F4 Thailand">
+                <div class="overlay"><a href="f4.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>F4 Thailand (2023)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="cdrama.jpg" alt="Under The Skin">
+                <div class="overlay"><a href="cdrama.jpg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Under The Skin (2022)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="diam.jpeg" alt="Silent">
+                <div class="overlay"><a href="diam.jpeg" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Silent (2022)</h3> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite Movie-->
+        <div class="heading-container">
+            <h2>Favourite Movie</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="reversi.jpg" alt="Reversi">
+                <div class="overlay"><a href="https://www.netflix.com/title/81753678" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Reversi (2024)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="tee yod.jpg" alt="Death Whisperer">
+                <div class="overlay"><a href="https://www.netflix.com/title/81757583" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Death Whisperer (2023)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="moon.jpg" alt="Over The Moon">
+                <div class="overlay"><a href="https://www.netflix.com/title/80214236" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Over The Moon (2020)</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                <img src="japan.jpg" alt="Once Upon A Crime">
+                <div class="overlay"><a href="https://www.netflix.com/title/81450775" class="fa fa-expand" target="_blank"></a></div>
+                <h3>Once Upon A Crime (2023)</h3> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite Singer -->
+        <div class="heading-container">
+            <h2>Favourite Singer</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="ty.jpg" alt="Taylor Swift">
+                    <div class="overlay"><a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=_cM3mB_jQd6m078jPAPzhw" class="fa fa-expand" 
+                    target="_blank"></a></div>
+                    <h3>Taylor Swift</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="fn.jpg" alt="Fajar Noor">
+                    <div class="overlay"><a href="https://open.spotify.com/artist/3JQketpX6wbJUNAlOIigJc?si=elFgcVPJTN6jNOP2F2drjw" class="fa fa-expand" 
+                    target="_blank"></a></div>
+                    <h3>Fajar Noor</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="9x9.jpg" alt="Nine By Nine">
+                    <div class="overlay"><a href="https://open.spotify.com/artist/53nEPak1KqKbrzl6DQnSAv?si=PmxExQXvTWmf5Voquo_mWQ" class="fa fa-expand" 
+                    target="_blank"></a></div>
+                    <h3>NINE BY NINE</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="ben.jpg" alt="BEN">
+                    <div class="overlay"><a href="https://open.spotify.com/artist/0bDdOBGVCFVt0f8N9ldW1k?si=6ozZ3I29RzCrnp_3sh4TIQ" class="fa fa-expand" 
+                    target="_blank"></a></div>
+                    <h3>BEN</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite Song -->
+        <div class="heading-container">
+            <h2>Favourite Song</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="lover.jpg" alt="Daylight">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/1fzAuUVbzlhZ1lJAx9PtY6?si=30432ec6cc2b4f62" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/1fzAuUVbzlhZ1lJAx9PtY6?si=30432ec6cc2b4f62" target="_blank" style="color: inherit; text-
+                    decoration: none;">Daylight by Taylor Swift</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="andmesh.jpg" alt="Anugerah Terindah">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/1nc4oXLc3slDMDgl3DMRtJ?si=5b0819536549489b" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/1nc4oXLc3slDMDgl3DMRtJ?si=5b0819536549489b" target="_blank" style="color: inherit; text- 
+                    decoration: none;">Anugerah Terindah by Andmesh</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="fajar.jpg" alt="Tahta Hatiku #Pendampingmu">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/4m1rVxDrvVEsQlN7qw8WV2?si=39d70d9ba4384b8a" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/4m1rVxDrvVEsQlN7qw8WV2?si=39d70d9ba4384b8a" target="_blank" style="color: inherit; text-
+                    decoration: none;">Tahta Hatiku #Pendampingmu by Fajar Noor</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="minho.png" alt="Heartbreak">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/6s2wjGGxHpxpTrQ9uMIOeu?si=14440c06f7bd4ef5" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/6s2wjGGxHpxpTrQ9uMIOeu?si=14440c06f7bd4ef5" target="_blank" style="color: inherit; text-
+                    decoration: none;">Heartbreak by MINHO</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite OST -->
+        <div class="heading-container">
+            <h2>Favourite OST</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="dots.jpg" alt="Everytime">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/1D6lK8qADoErTTLkY4YBfM?si=120ff234fd124f0c" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/1D6lK8qADoErTTLkY4YBfM?si=120ff234fd124f0c" target="_blank" style="color: inherit; text-
+                    decoration: none;">Everytime by Chen (EXO) & Punch (OST Descendants Of The Sun)</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="selamanyacinta.jpg" alt="Selamanya Cinta">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/1JEb7yVTEnpWixgYi2W00i?si=60e7e23cf3d84b9b" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/1JEb7yVTEnpWixgYi2W00i?si=60e7e23cf3d84b9b" target="_blank" style="color: inherit; text-
+                    decoration: none;">Selamanya Cinta by Shila Amzah & Alif Satar (OST Suri Hati Mr. Pilot)</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="ifonly.jpg" alt="If Only">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/1mRBJdpIgc3jZH8C3cN2WV?si=718617e7668948b8" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/1mRBJdpIgc3jZH8C3cN2WV?si=718617e7668948b8" target="_blank" style="color: inherit; text-
+                    decoration: none;">If Only by Dove Cameron (OST Descendants)</a></h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item">
+                    <img src="star.png" alt="Star">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/track/73Zoq6Z5lXVJPAERw2s9fp?si=8c0fa168f97b41db" class="fa fa-play" target="_blank"></a>
+                    </div>
+                    <h3><a href="https://open.spotify.com/track/73Zoq6Z5lXVJPAERw2s9fp?si=8c0fa168f97b41db" target="_blank" style="color: inherit; text-
+                    decoration: none;">Star by Colde (OST See You In My 19th Life)</a></h3>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<footer>
+    Copyright &#128157; &copy; NUR ANIS AFINA AHMAD
+</footer>
+
+</body>
+</html>
