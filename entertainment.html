@@ -1,0 +1,246 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entertainment</title>
+
+<style>
+* { 
+  box-sizing: border-box;
+ }
+
+body { 
+  font-family: Arial, sans-serif;
+  background: url("entertainment bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+  margin: 0;
+}
+
+.fav-header {
+  background: #51087E;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #6c4db5;
+  margin-top: 40px;
+  border-left: 6px solid #c9afff;
+  padding-left: 10px;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: white;
+  border: 2px solid #c9afff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width:100%;
+  height:500px;
+  object-fit: cover;
+}
+
+.text {
+  text-align: center;
+  padding: 10px;
+  background: #6c4db5;
+  color: white;
+  font-weight: bold;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 14px;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.6);
+  user-select: none;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+/* AUDIO BOX */
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #c9afff;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background: #f7f7f7;
+  border-top: 2px solid #ddd;
+  font-size: 14px;
+  color: #444;
+  font-family: courier;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fav-header">
+  <h1>🎉 Types Of Entertainment 🎉</h1>
+</div>
+
+<!-- ACTOR -->
+<h2>Favorite Actor & Actress 🎥</h2>
+<div class="slideshow-container slideshow-actor">
+  <div class="mySlides"><img src="choi minho.jpg"><div class="text">Choi Minho</div></div>
+  <div class="mySlides"><img src="yaya.jpg"><div class="text">Urassaya Sperbund</div></div>
+  <div class="mySlides"><img src="tjc.jpg"><div class="text">Tan Jian Ci"</div></div>
+  <div class="mySlides"><img src="ry.jpg"><div class="text">Ryusei Yokohama</div></div>
+
+  <a class="prev" onclick="plusSlides(-1,0)">❮</a>
+  <a class="next" onclick="plusSlides(1,0)">❯</a>
+</div>
+
+<!-- DRAMA -->
+<h2>Favorite Drama 🍿</h2>
+<div class="slideshow-container slideshow-drama">
+  <div class="mySlides"><img src="esok.jpg"><div class="text">Tomorrow (2022)</div></div>
+  <div class="mySlides"><img src="f4.jpg"><div class="text">F4 Thailand (2023)</div></div>
+  <div class="mySlides"><img src="cdrama.jpg"><div class="text">Under The Skin (2022)</div></div>
+  <div class="mySlides"><img src="diam.jpg"><div class="text">Silent (2022)</div></div>
+
+  <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+  <a class="next" onclick="plusSlides(1,1)">❯</a>
+</div>
+
+<!-- MOVIE -->
+<h2>Favorite Movie 🎬</h2>
+<div class="slideshow-container slideshow-movie">
+  <div class="mySlides"><img src="reversi.jpg"><div class="text">Reversi (2024)</div></div>
+  <div class="mySlides"><img src="tee yod.jpg"><div class="text">Death Whisperer (2023)</div></div>
+  <div class="mySlides"><img src="moon.jpg"><div class="text">Over The Moon (2020)</div></div>
+  <div class="mySlides"><img src="japan.jpg"><div class="text">Once Upon A Crime (2023)</div></div>
+
+  <a class="prev" onclick="plusSlides(-1,2)">❮</a>
+  <a class="next" onclick="plusSlides(1,2)">❯</a>
+</div>
+
+<!-- SINGER -->
+<h2>Favorite Singer 🎤</h2>
+<div class="slideshow-container slideshow-singer">
+  <div class="mySlides"><img src="ty.jpg"><div class="text">Taylor Swift</div></div>
+  <div class="mySlides"><img src="fn.jpg"><div class="text">Fajar Noor</div></div>
+  <div class="mySlides"><img src="9x9.jpg"><div class="text">Nine By Nine</div></div>
+  <div class="mySlides"><img src="ben.jpg"><div class="text">Ben</div></div>
+
+  <a class="prev" onclick="plusSlides(-1,3)">❮</a>
+  <a class="next" onclick="plusSlides(1,3)">❯</a>
+</div>
+
+<!-- SONG -->
+<h2>Favorite Song 🎵</h2>
+
+<div class="box">
+<p><b>Daylight - Taylor Swift</b></p>
+<audio controls style="width:100%">
+<source src="daylight.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="box">
+<p><b>Anugerah Terindah - Andmesh</b></p>
+<audio controls style="width:100%">
+<source src="anugerah terindah.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="box"> 
+<p><b>Tahta Hatiku #Pendampingmu - Fajar Noor</b></p> 
+<audio controls style="width:100%;"> 
+<source src="tahta hatiku.mp3" type="audio/mpeg"> 
+</audio> 
+</div> 
+
+<div class="box"> 
+<p><b>Heartbreak - MINHO</b></p>
+<audio controls style="width:100%;"> 
+<source src="heartbreak.mp3" type="audio/mpeg"> 
+</audio> 
+</div> 
+
+<h2>Favorite OST 🎵</h2> 
+<div class="box"> 
+<p><b>Everytime by Chen (EXO) & Punch (OST Descendants Of The Sun)</b></p> 
+<audio controls style="width:100%;"> 
+<source src="everytime.mp3" type="audio/mpeg"> 
+</audio> 
+</div> 
+
+<div class="box"> 
+<p><b>Selamanya Cinta by Shila Amzah & Alif Satar (OST Suri Hati Mr. Pilot)</b></p> 
+<audio controls style="width:100%;"> <source src="selamanya cinta.mp3" type="audio/mpeg"> 
+</audio> 
+</div>
+
+<div class="box"> 
+<p><b>If Only by Dove Cameron (OST Descendants)</b></p> 
+<audio controls style="width:100%;"> 
+<source src="if only.mp3" type="audio/mpeg"> 
+</audio> 
+</div>
+
+<div class="box"> 
+<p><b>Star by Colde (OST See You In My 19th Life)</b></p> 
+<audio controls style="width:100%;"> 
+<source src="star.mp3" type="audio/mpeg"> 
+</audio> 
+</div>
+
+<script>
+let slideIndex = [1,1,1,1];
+const slideClasses = [
+  "slideshow-actor",
+  "slideshow-drama",
+  "slideshow-movie",
+  "slideshow-singer"
+];
+
+slideClasses.forEach((_, i) => showSlides(1, i));
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  const slides = document.querySelectorAll("." + slideClasses[no] + " .mySlides");
+  if (n > slides.length) slideIndex[no] = 1;
+  if (n < 1) slideIndex[no] = slides.length;
+
+  slides.forEach(slide => slide.style.display = "none");
+  slides[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+<footer>
+    Copyright &#128157; &copy; NUR ANIS AFINA AHMAD
+</footer>
+
+</body>
+</html>
