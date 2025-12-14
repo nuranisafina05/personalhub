@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>FRIENDS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1 {
+display: flex;
+flex-direction: column;
+background: url('friends bg.jpg') no-repeat center center fixed;
+background-size: cover;
+font-family: "Montserrat", sans-serif}
+img, video {margin-bottom: 12px; display: block; width: 100%; height: 250px; object-fit: cover; border-radius: 4px;}
+.w3-row {display: flex; flex-wrap: wrap; gap: 12px;}
+.w3-third {flex: 1 1 calc(33.33% - 12px); box-sizing: border-box;}
+@media screen and (max-width: 992px) {
+    .w3-third {flex: 1 1 calc(50% - 12px);}
+}
+@media screen and (max-width: 600px) {
+    .w3-third {flex: 1 1 100%;}
+}
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: courier;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>MEMORIES</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo & Video Grid -->
+<div class="w3-row" id="myGrid">
+  <div class="w3-third flex-item">
+    <img src="i1.jpg">
+    <img src="i2.jpg">
+    <img src="i3.jpg">
+    <img src="i4.jpg">
+    <img src="i5.jpg">
+    <img src="i6.jpg">
+  </div>
+
+  <div class="w3-third flex-item">
+    <img src="i7.jpg">
+    <img src="i8.jpg">
+    <img src="i9.jpg">
+    <img src="i10.jpg">
+    <img src="i11.jpg">
+    <img src="i12.jpg">
+  </div>
+
+  <div class="w3-third flex-item">
+    <img src="i13.jpg">
+    <img src="i14.jpg">
+    <img src="i15.jpg">
+    <img src="i16.jpg">
+    <img src="i17.jpg">
+    <img src="i18.jpg">
+  </div>
+
+  <div class="w3-third flex-item">
+    <img src="i19.jpg">
+    <img src="i20.jpg">
+    <img src="i21.jpg">
+    <img src="i22.jpg">
+    <img src="i23.jpg">
+    <img src="i24.jpg">
+  </div>
+
+  <div class="w3-third flex-item">
+    <img src="i25.jpg">
+    <img src="i26.jpg">
+    <img src="i27.jpg">
+    <img src="i28.jpg">
+    <img src="i29.jpg">
+    <img src="i30.jpg">
+  </div>
+
+  <div class="w3-third flex-item">
+    <img src="i31.jpg">
+    <img src="i32.jpg">
+    <img src="i33.jpg">
+    <img src="i34.jpg">
+    <img src="i35.jpg">
+    <img src="i36.jpg">
+  </div>
+</div>
+
+<footer>
+  <audio controls autoplay>
+    <source src="bad.mp3" type="audio/mpeg">
+  </audio>
+</footer>
+
+
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row w3-row-padding";
+  } else { 
+    x.className = x.className.replace(" w3-row-padding", "");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
