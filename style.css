@@ -1,0 +1,13 @@
+/* External CSS for assignment */
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
