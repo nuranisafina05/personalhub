@@ -1,0 +1,70 @@
+/* ===== GLOBAL POLISH ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== BODY OVERLAY FOR READABILITY ===== */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(255,255,255,0.55);
+  z-index:-1;
+}
+
+/* ===== HEADER ENHANCEMENT ===== */
+header{
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+
+header h1{
+  text-shadow:0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* ===== CARD IMPROVEMENTS ===== */
+.card{
+  position:relative;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:var(--radius);
+  border:2px solid transparent;
+  transition:.3s;
+}
+
+.card:hover::after{
+  border-color:var(--accent);
+}
+
+/* ===== TEXT SPACING ===== */
+.name{
+  font-size:16px;
+}
+
+.meta{
+  font-size:14px;
+  color:#555;
+}
+
+/* ===== GALLERY SMOOTHNESS ===== */
+.gallery-container img{
+  filter:brightness(0.95);
+}
+
+.gallery-container img:hover{
+  filter:brightness(1);
+}
+
+/* ===== IMAGE POPUP SMOOTHER ===== */
+.img-popup{
+  backdrop-filter:blur(4px);
+}
+
+/* ===== AUDIO PLAYER ===== */
+footer audio{
+  width:280px;
+  max-width:90%;
+}
