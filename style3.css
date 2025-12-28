@@ -1,0 +1,63 @@
+/* Body overlay for subtle readability over background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4); /* slightly dim/brighten background */
+    z-index: -1;
+}
+
+/* Header tweaks */
+h1 {
+    color: #ff6600;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Photo & Video Grid Hover Effects */
+.w3-row img {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.w3-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Add subtle spacing between images */
+.w3-row img {
+    margin-bottom: 14px;
+}
+
+/* Audio player tweaks */
+footer audio {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Button hover effects */
+.w3-button:hover {
+    background-color: #ff6600 !important;
+    color: #fff !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Smooth transition for flex items */
+.flex-item {
+    transition: all 0.3s ease;
+}
+
+/* Optional: subtle fade-in for grid items */
+.w3-third {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
